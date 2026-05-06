@@ -33,6 +33,18 @@ This project is built as a fully automated data pipeline:
 
 ---
 
+## 📊 Visual Insights Showcase
+
+Below are programmatic visual extracts generated directly from our synthetic SQLite Data Warehouse using `matplotlib` and `seaborn` under a brutalist dark-mode aesthetic:
+
+<div align="center">
+  <img src="assets/monthly_trend.png" alt="Monthly Sales Trend" width="800"/>
+  <br><br>
+  <img src="assets/revenue_by_category.png" alt="Revenue by Category" width="800"/>
+</div>
+
+---
+
 ## 🔮 Key Analytical Deliverables
 
 - **Customer Lifetime Value (CLV)**: Identifying top spenders and high-value cohorts.
