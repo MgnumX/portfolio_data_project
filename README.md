@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 E-Commerce Analytics — From Raw Data to Real Decisions
+# 🌌 E-Commerce Analytics: From Raw Data to Real Decisions
 
 **by Emilio Morillo**
 
@@ -19,7 +19,7 @@
 
 I built this project for a simple reason: I got tired of seeing portfolios that only show *how* to do SQL, not *why* any of it matters.
 
-So I asked myself — what if I treated a fake e-commerce database like it was a real client? What questions would an actual business owner lose sleep over? That's the angle I worked from. Every query here exists because a real version of that question exists somewhere on a Slack channel or a Friday afternoon call.
+So I asked myself: what if I treated a fake e-commerce database like it was a real client? What questions would an actual business owner lose sleep over? That's the angle I worked from. Every query here exists because a real version of that question exists somewhere on a Slack channel or a Friday afternoon call.
 
 ---
 
@@ -27,9 +27,9 @@ So I asked myself — what if I treated a fake e-commerce database like it was a
 
 Three scripts, one database, one notebook. Nothing bloated.
 
-- **`setup_db.py`** — Spins up a SQLite database from scratch and fills it with synthetic but realistic data: 100 customers, 50 products, 500 orders. Run it once and you're done.
-- **`queries.sql`** — Five SQL queries that go beyond `SELECT *`. We're talking CTEs, window functions, month-over-month growth calculations, and a churn detection query that actually tells you who's gone quiet.
-- **`eda.ipynb`** — A Jupyter notebook where the data starts talking. Charts, trends, category breakdowns — all rendered in dark mode because I think data should look as good as it performs.
+- **`setup_db.py`**: Spins up a SQLite database from scratch and fills it with synthetic but realistic data. 100 customers, 50 products, 500 orders. Run it once and you're done.
+- **`queries.sql`**: Five SQL queries that go beyond `SELECT *`. We're talking CTEs, window functions, month-over-month growth calculations, and a churn detection query that actually tells you who's gone quiet.
+- **`eda.ipynb`**: A Jupyter notebook where the data starts talking. Charts, trends, category breakdowns, all rendered in dark mode because I think data should look as good as it performs.
 
 ---
 
@@ -47,15 +47,15 @@ Some things surprised me when I actually ran this. *Home & Garden* eating *Elect
 
 ## The five questions I answered
 
-1. **Where is the money coming from, geographically?** — Revenue ranked by country with a window function so you can see the gap between first and second at a glance.
+1. **Where is the money coming from, geographically?** Revenue ranked by country with a window function so you can see the gap between first and second at a glance.
 
-2. **Who are the customers worth keeping?** — A CLV (Customer Lifetime Value) ranking. The top 10 tell you a lot about what good looks like.
+2. **Who are the customers worth keeping?** A CLV (Customer Lifetime Value) ranking. The top 10 tell you a lot about what good looks like.
 
-3. **Is the business growing or just surviving?** — Monthly trend with MoM growth rates. Flat lines and big dips are visible immediately.
+3. **Is the business growing or just surviving?** Monthly trend with MoM growth rates. Flat lines and big dips are visible immediately.
 
-4. **What categories are people actually buying?** — Simple but powerful. Turns out category intuition is usually wrong.
+4. **What categories are people actually buying?** Simple but powerful. Turns out category intuition is usually wrong.
 
-5. **Who hasn't been back in six months?** — An anti-join that surfaces dormant customers. The first step to a re-engagement campaign.
+5. **Who hasn't been back in six months?** An anti-join that surfaces dormant customers. The first step to a re-engagement campaign.
 
 ---
 
@@ -75,6 +75,6 @@ No special environment needed. Just Python 3 and `pip install pandas matplotlib 
 ---
 
 <div align="center">
-  <p><i>"The numbers never lie — but they do stay quiet until you ask the right question."</i></p>
-  <b>— Emilio Morillo</b>
+  <p><i>"The numbers never lie. They just stay quiet until you ask the right question."</i></p>
+  <b>Emilio Morillo</b>
 </div>
