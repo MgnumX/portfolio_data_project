@@ -1,8 +1,8 @@
 <div align="center">
-  
-# 🌌 Data Analytics Portfolio: E-Commerce Insights 
 
-**A brutalist, psychedelic approach to uncovering hidden market realities.**
+# 🌌 E-Commerce Analytics — From Raw Data to Real Decisions
+
+**by Emilio Morillo**
 
 <br>
 
@@ -15,27 +15,25 @@
 
 <br>
 
-## 👁️ The Vision
+## A little context
 
-Welcome to my deep-dive into synthetic E-Commerce data. This repository isn't just about SQL queries; it's about shifting perspectives and extracting actionable intelligence from raw data noise. 
+I built this project for a simple reason: I got tired of seeing portfolios that only show *how* to do SQL, not *why* any of it matters.
 
-By engineering a custom SQLite database and applying advanced analytical techniques, I transform rows and columns into clear, strategic narratives.
-
----
-
-## 🧬 Architecture & Workflow
-
-This project is built as a fully automated data pipeline:
-
-1. **`setup_db.py`**: A synthetic data engine that generates a robust SQLite database (`ecommerce.db`) with `Customers`, `Products`, and `Orders` tables.
-2. **`queries.sql`**: A collection of 5 advanced SQL queries (CTEs, Window Functions, Anti-Joins) designed to answer complex business questions.
-3. **`eda.ipynb`**: A comprehensive Jupyter Notebook featuring Exploratory Data Analysis (EDA) and dynamic visualizations using `pandas`, `matplotlib`, and `seaborn`.
+So I asked myself — what if I treated a fake e-commerce database like it was a real client? What questions would an actual business owner lose sleep over? That's the angle I worked from. Every query here exists because a real version of that question exists somewhere on a Slack channel or a Friday afternoon call.
 
 ---
 
-## 📊 Visual Insights Showcase
+## What's in here
 
-Below are programmatic visual extracts generated directly from our synthetic SQLite Data Warehouse using `matplotlib` and `seaborn` under a brutalist dark-mode aesthetic:
+Three scripts, one database, one notebook. Nothing bloated.
+
+- **`setup_db.py`** — Spins up a SQLite database from scratch and fills it with synthetic but realistic data: 100 customers, 50 products, 500 orders. Run it once and you're done.
+- **`queries.sql`** — Five SQL queries that go beyond `SELECT *`. We're talking CTEs, window functions, month-over-month growth calculations, and a churn detection query that actually tells you who's gone quiet.
+- **`eda.ipynb`** — A Jupyter notebook where the data starts talking. Charts, trends, category breakdowns — all rendered in dark mode because I think data should look as good as it performs.
+
+---
+
+## 📊 What the data says
 
 <div align="center">
   <img src="assets/monthly_trend.png" alt="Monthly Sales Trend" width="800"/>
@@ -43,19 +41,40 @@ Below are programmatic visual extracts generated directly from our synthetic SQL
   <img src="assets/revenue_by_category.png" alt="Revenue by Category" width="800"/>
 </div>
 
+Some things surprised me when I actually ran this. *Home & Garden* eating *Electronics* for breakfast wasn't something I anticipated. That kind of thing only shows up when you stop assuming and start looking.
+
 ---
 
-## 🔮 Key Analytical Deliverables
+## The five questions I answered
 
-- **Customer Lifetime Value (CLV)**: Identifying top spenders and high-value cohorts.
-- **Revenue by Region**: Geographical heatmaps of our financial performance.
-- **Monthly Growth Trends**: Tracking momentum with precise Month-over-Month (MoM) calculations.
-- **Category Popularity**: Visualizing the distribution of consumer preferences.
-- **Churn Prediction**: Isolating inactive segments for targeted re-engagement campaigns.
+1. **Where is the money coming from, geographically?** — Revenue ranked by country with a window function so you can see the gap between first and second at a glance.
+
+2. **Who are the customers worth keeping?** — A CLV (Customer Lifetime Value) ranking. The top 10 tell you a lot about what good looks like.
+
+3. **Is the business growing or just surviving?** — Monthly trend with MoM growth rates. Flat lines and big dips are visible immediately.
+
+4. **What categories are people actually buying?** — Simple but powerful. Turns out category intuition is usually wrong.
+
+5. **Who hasn't been back in six months?** — An anti-join that surfaces dormant customers. The first step to a re-engagement campaign.
+
+---
+
+## Run it yourself
+
+```bash
+git clone https://github.com/MgnumX/portfolio_data_project.git
+cd portfolio_data_project
+
+python setup_db.py        # builds the database
+python generate_visuals.py # exports the charts
+# open eda.ipynb in Jupyter or VS Code for the full walkthrough
+```
+
+No special environment needed. Just Python 3 and `pip install pandas matplotlib seaborn`.
 
 ---
 
 <div align="center">
-  <p><i>"Data is the new psychedelic. It expands your perception of the market."</i></p>
-  <b>— Emilio Morillo | Lead Data Scientist</b>
+  <p><i>"The numbers never lie — but they do stay quiet until you ask the right question."</i></p>
+  <b>— Emilio Morillo</b>
 </div>
