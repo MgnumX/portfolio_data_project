@@ -74,7 +74,17 @@ No special environment needed. Just Python 3 and `pip install pandas matplotlib 
 
 ---
 
+## Una nota personal
+
+Este proyecto lo hice desde cero, sin templates, sin copiar nada de Stack Overflow. Solo yo, Python, y demasiado café.
+
+Soy de los que creen que el análisis de datos no es solo una habilidad técnica, es una forma de hacerle preguntas al mundo. Y el mundo, si le preguntas bien, siempre responde.
+
+Si llegaste hasta acá y algo de esto te sirvió, me alegra. Si tienes feedback, abre un issue. Si quieres hablar de datos, SQL o lo que sea, ya sabes dónde encontrarme.
+
+---
+
 <div align="center">
-  <p><i>"The numbers never lie. They just stay quiet until you ask the right question."</i></p>
+  <p><i>"Los números no mienten. Solo se quedan callados hasta que haces la pregunta correcta."</i></p>
   <b>Emilio Morillo</b>
 </div>
