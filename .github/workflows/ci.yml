@@ -1,0 +1,22 @@
+name: Data Pipeline Validation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Setup Database
+        run: python setup_db.py
+      - name: Generate Visuals
+        run: python generate_visuals.py
