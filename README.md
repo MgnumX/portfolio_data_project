@@ -1,3 +1,7 @@
+![Revenue by Category](assets/revenue_by_category.png)
+
+![Monthly Revenue Trend](assets/monthly_trend.png)
+
 <div align="center">
 
 # 🌌 E-Commerce Analytics: From Raw Data to Real Decisions
@@ -14,6 +18,9 @@
 </div>
 
 <br>
+![Revenue by Category](assets/revenue_by_category.png)
+
+![Monthly Revenue Trend](assets/monthly_trend.png)
 
 ## A little context
 
@@ -22,6 +29,14 @@ I built this project for a simple reason: I got tired of seeing portfolios that 
 So I asked myself: what if I treated a fake e-commerce database like it was a real client? What questions would an actual business owner lose sleep over? That's the angle I worked from. Every query here exists because a real version of that question exists somewhere on a Slack channel or a Friday afternoon call.
 
 ---
+
+
+![Monthly Revenue Trend](assets/monthly_trend.png)
+
+
+
+![Monthly Revenue Trend](assets/monthly_trend.png)
+
 
 ## What's in here
 
